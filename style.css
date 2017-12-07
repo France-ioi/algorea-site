@@ -512,16 +512,16 @@ table.borders {
     font-weight: bold;
 }
 table .orange {
-    background-color: #ffb254;
+    background-color: #fdd5a4;
 }
 table .yellow {
-    background-color: #ffe973;
+    background-color: #ffffab;
 }
 table .green {
-    background-color: #aeffae;
+    background-color: #8ff38f;
 }
 table .blue {
-    background-color: #83e0ff;
+    background-color: #a0cbff;
 }
 table.ranking {
     margin: auto;
