@@ -376,13 +376,12 @@ h3 {
     border-bottom: 1px solid #333;
 }
 .colorCategories .colorCategoryTitle {
-    margin-top: 0;
-    line-height: 1;
     padding: 10px;
     color: #000;
     font-size: 1.5em;
     text-shadow: 0px 0px 1px #ccc;
     width: 25%;
+    vertical-align: middle;
 }
 .colorCategory td {
     padding: 10px;
@@ -391,10 +390,10 @@ h3 {
     margin-top: 0;
 }
 .colorCategory.white {
-    background-color: #efefef;
+    background-color: #fff;
 }
 .colorCategory.white .colorCategoryTitle {
-    background-color: #fff;
+    background-color: #efefef;
 }
 .colorCategory.yellow {
     background-color: #ffffab;
@@ -419,6 +418,18 @@ h3 {
 }
 .colorCategory.blue .colorCategoryTitle {
     background-color: #0569ff;
+}
+#pagePreparation .colorCategories td {
+    border: 1px solid #333;
+}
+#pagePreparation .colorCategoryTitle {
+    width: auto;
+}
+#pagePreparation .colorCategoryTitle ul {
+    font-size: 1rem;
+}
+#pagePreparation .colorCategories .activityTitle {
+    font-size: 1.5em;
 }
 
 /*
