@@ -11,18 +11,14 @@
             <a href ng-click="setTab(2)">Élèves</a>
         </li>
         <li ng-class="{ active: isTabSet(3) }">
-            <a href ng-click="setTab(3)">Progresser parmi les catégories</a>
+            <a href ng-click="setTab(3)">Catégories</a>
         </li>
       </ul>
     </div>
     <div class="tabs">
       <div class="tab" ng-show="isTabSet(1)">
-        <p>Chaque élève qui a participé au concours Castor se verra attribuer une catégorie initiale en fonction de son résultat, visible sur l’interface coordinateur après la publication des résultats.</p>
-        <p>Les élèves qui n’ont pas participé au Castor peuvent participer par défaut en catégorie blanche.</p>
-        <p>Vous pourrez ouvrir l’accès à l’épreuve en catégories blanche, jaune et orange à tout élève qui vous semble avoir les compétences correspondantes.</p>
-        <p class="txtcenter"><a href="#/#categroiesPresentation">voir la description des catégories</a></p>
-        <p>Pour accéder aux catégories verte et supérieures, un élève doit se qualifier lors d’un entraînement ou d’une épreuve précédente.</p>
-        <p>Pour organiser chaque épreuve d’entraînement et de concours, utilisez votre interface coordinateur.  Deux modalités combinables sont proposées :</p>
+        <h2>Enseignants : faire participer vos élèves</h2>
+        <p>Pour organiser la participation de vos élèves aux entraînements et au concours, utilisez votre interface coordinateur. Deux modalités combinables sont proposées :</p>
 
         <table class="table">
           <thead>
@@ -55,7 +51,7 @@
             </tr>
           </tbody>
         </table>
-
+        <h2>Allocation du temps en classe</h2>
         <p>En fonction du temps que vous pouvez consacrer en classe à Algoréa, nous vous conseillons plusieurs possibilités :</p>
 
         <table class="table">
@@ -105,10 +101,16 @@
             </tr>
           </tbody>
         </table>
+        <h2>Catégories de participation</h2>
+          <p>Chaque élève qui a participé au concours Castor se verra attribuer une catégorie initiale en fonction de son résultat, visible sur l’interface coordinateur après la publication des résultats.</p>
+          <p>Les élèves qui n’ont pas participé au Castor peuvent participer par défaut en catégorie blanche.</p>
+          <p>Vous pourrez ouvrir l’accès à l’épreuve en catégories blanche, jaune et orange à tout élève qui vous semble avoir les compétences correspondantes.</p>
+          <p class="txtcenter"><a href="#/#categroiesPresentation">voir la description des catégories</a></p>
+          <p>Pour accéder aux catégories verte et supérieures, un élève doit se qualifier lors d’un entraînement ou d’une épreuve précédente.</p>
       </div>
 
       <div class="tab" ng-show="isTabSet(2)">
-         <h2>Modes de participation</h2>
+         <h2>Élèves : comment participer</h2>
          <p>
             Le concours Algoréa peut se faire en classe, à la maison, ou un peu des deux :
          </p>
@@ -204,6 +206,29 @@
       </div>
 
       <div class="tab" ng-show="isTabSet(3)">
+        <h2>Accéder au concours</h2>
+        <p>
+          Il y a quatre manières d'obtenir l'accès au concours dans une catégorie donnée :
+        </p>
+        <h3>1) Le concours Castor</h3>
+        <p>
+          Avoir participé au concours Castor donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu. L'enseignant s'occupe de transmettre l'accès.
+        </p>
+        <h3>2) La préparation</h3>
+        <p>
+          Obtenir 100 points ou plus lors d’une <a href="#/preparation">préparation</a> dans une catégorie blanche, jaune ou orange, ouvre l’accès au concours dans cette même catégorie.
+        </p>
+        <h3>3) Le concours Algoréa</h3>
+        <p>
+          Atteindre 100 points ou plus lors du concours Algoréa dans une catégorie, donne immédiatement l’accès au concours de la catégorie suivante. Un seuil inférieur à 100 peut être annoncé lors de la publication les résultats.
+        </p>
+        <h3>4) Le site france-ioi.org</h3>
+        <p>
+          Avoir un compte sur <a href="http://france-ioi.org">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès direct au concours, dans une catégorie qui dépend du nombre d'exercices résolus et des niveaux validés.
+        </p>
+        <p>
+          Allez sur [cette page] pour voir les détails.
+        </p>
         <h2>Valider une catégorie</h2>
         <p>
          Lors de chaque épreuve du concours Algoréa, votre objectif doit être d’obtenir un maximum de points à l’épreuve, pour bien vous classer dans cette catégorie, et valider cette catégorie.
@@ -213,32 +238,6 @@
         </p>
         <p>
           Ainsi si vous avez obtenu 100 points lors d’une épreuve de concours en catégorie orange, vous aurez validé : catégorie orange, 2 étoiles. Etc. Le nombre de points pour valider 3 ou 4 étoiles sera fixé après chaque concours.
-        </p>
-        <h2>Accéder à une catégorie</h2>
-        <p>
-          Avant de pouvoir valider une catégorie, il faut y avoir accès.
-        </p>
-        <p>
-          Il y a quatre manières d’obtenir l’accès à une catégorie :
-        </p>
-        <h3>1) Le concours Castor</h3>
-        <p>
-          Si vous avez participé au concours Castor, vous obtenez automatiquement l’accès à une catégorie, de blanche à orange selon votre score.
-        </p>
-        <h3>2) Le concours Algoréa</h3>
-        <p>
-          Si vous atteignez 100 points ou plus lors du concours Algoréa dans une catégorie, vous obtenez immédiatement l’accès à la catégorie suivante. Parfois c’est un peu moins de 100 points; vérifiez une fois les résultats publiés.
-        </p>
-        <h3>3) La préparation</h3>
-        <p>
-          Si vous obtenez 100 points ou plus lors d’une préparation dans une catégorie parmi blanche, jaune ou orange, vous obtenez l’accès à cette catégorie pour le concours.
-        </p>
-        <h3>4) Progresser sur france-ioi.org</h3>
-        <p>
-          Si vous avez un compte france-ioi.org, vous pouvez obtenir un accès direct aux catégories, selon le nombre d’exercices que vous avez résolus et les niveaux que vous avez validés.
-        </p>
-        <p>
-          Allez sur [cette page] pour voir les détails.
         </p>
 <!--
         <table class="colorCategories">
