@@ -76,19 +76,9 @@ myApp.controller('PageCtrl', function($scope, $location) {
    $scope.isActive = function (viewLocation) {
      return viewLocation === $location.path();
    };
-   $scope.go = function ( path ) {
-     $location.path( path );
-   };
 });
 
-myApp.controller('VideoDisplay', function($scope, $sce) {
-   $scope.displayPlayer = false;
-   $scope.loadVideo = function (item) {
-      $scope.videoUrl = $sce.trustAsResourceUrl(item.currentTarget.getAttribute('data-source'));
-      $scope.displayPlayer = true;
-   };
-});
-
+// Create tabs
 myApp.controller('TabController', ['$scope', function($scope) {
    $scope.tab = 1;
 
@@ -101,14 +91,3 @@ myApp.controller('TabController', ['$scope', function($scope) {
    };
 }]);
 
-myApp.controller('PillController', ['$scope', function($scope) {
-   $scope.pill;
-
-   $scope.setPill = function(newPill){
-      $scope.pill = newPill;
-   };
-
-   $scope.isPillSet = function(pillNum){
-      return $scope.pill === pillNum;
-   };
-}]);

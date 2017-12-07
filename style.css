@@ -449,34 +449,6 @@ h3 {
     border-bottom: 1px solid #fff;
 }
 
-/*
-*
-* PILLS
-*
-*/
-.pillSelectors {
-    margin: 3em auto;
-    padding: 1px;
-    text-align: center;
-}
-.pillSelectors div {
-    display: inline-block;
-    margin: 0 1em;
-    border: 8px solid transparent;
-    border-radius: 20px;
-}
-.pillSelectors div.active {
-    border-color: green;
-}
-.pillSelectors div a {
-    color: #fff;
-    font-size: 2em;
-    padding: 20px 50px;
-    background-color: blue;
-    border: 2px solid darkblue;
-    border-radius: 10px;
-    display: block;
-}
 
 /*
 *
