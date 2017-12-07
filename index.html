@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-FR" ng-app="algorea">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Concours Algoréa</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script type="text/javascript" src="route.js"></script>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<body ng-controller="PageCtrl">
+  <header class="header" role="banner">
+    <div class="headerContent">
+      <div class="subHeader">
+      </div>
+      <div class="siteLogo">
+        <div class="siteTitle">Concours <img src="images/logoAlgorea.png"/><span class="hiddenChar">A</span>lgoréa</div>
+      </div>
+      <nav id="menu" role="navigation">
+        <ul>
+          <li ng-class="{active: isActive('/')}">
+            <a href="#/">Présentation</a>
+          </li><li ng-class="{active: isActive('/participation')}">
+            <a href="#/participation">Participer</a>
+          </li><li ng-class="{active: isActive('/preparation')}">
+            <a href="#/preparation">Se préparer</a>
+          </li><li ng-class="{active: isActive('/recompenses')}">
+            <a href="#/recompenses">Récompenses</a>
+          </li><li ng-class="{active: isActive('/resultats')}">
+            <a href="#/resultats">Résultats</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div ng-if="isActive('/')"><ng-include src="'actus.html'" id="actus"></ng-include></div>
+
+  <div class="mainContainer" id="content" role="main">
+  <div ng-view autoscroll="true"><!-- the div that display the page content --></div>
+  <div class="clear"></div>
+  </div>
+
+  <footer id="footer" role="contentinfo">
+    <div id="copyright">
+    Concours Algoréa par <a href="http://www.france-ioi.org" target="_blank">France-ioi</a> - <a href="#/quiSommesNous">Contact</a> - <a href="#/infosLegales">Informations légales</a>
+    </div>
+  </footer>
+</body>
+</html>

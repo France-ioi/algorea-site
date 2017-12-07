@@ -1,0 +1,593 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear {
+    clear: both
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   line-height: 1.5;
+}
+a {
+    color: #448b2b;
+    text-decoration: underline;
+    cursor: pointer;
+}
+strong {
+    font-weight: bold;
+}
+.txtcenter {
+    text-align: center;
+}
+.txtright {
+    text-align: right;
+}
+.txtbold {
+    font-weight: bold;
+}
+.fr {
+    float: right;
+    margin-left: 10px;
+}
+.fl {
+    float: left;
+    margin-right: 10px;
+}
+.fr img {
+    vertical-align: middle;
+}
+.mtm {
+    margin-top: 10px;
+}
+.mtml {
+    margin-top: 20px;
+}
+.mtl {
+    margin-top: 40px;
+}
+.mrm {
+    margin-right: 10px;
+}
+.mrl {
+    margin-right: 40px;
+}
+.mll {
+    margin-left: 40px;
+}
+.row {
+    clear: both;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.col {
+    flex: 0 1 auto;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+img.icon {
+    vertical-align: middle;
+}
+img {
+    max-width: 100%;
+}
+.alert {
+    color: red;
+}
+@media (min-width: 640px) and (max-width: 799px) {
+    .one-third {
+        flex: 0 1 50%;
+    }
+}
+@media (min-width: 800px) {
+    .one-half {
+        width: 50%;
+    }
+    .one-third {
+        flex: 0 1 33.33%;
+    }
+}
+.section {
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+p, ul {
+    margin-top: 10px;
+}
+.hiddenChar {
+    font-size: 0;
+}
+.btn {
+    text-align: center;
+    background-color: #448b2b;
+    border: 2px solid #234a16;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 3px 3px 3px #777, 2px 2px 6px #63bd43 inset;
+}
+.btn:hover {
+    background-color: #346b21;
+}
+.btn:focus, .btn:active {
+    box-shadow: 3px 3px 3px #777, 2px 2px 6px #2a501d inset;
+}
+.pageContent {
+    text-align: justify;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+*
+* Branding
+*
+*/
+.header {
+    background-color: white;
+    box-shadow: 0px 1px 5px #888888;
+}
+.subHeader {
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    background-color: #448b2b;
+}
+.siteLogo {
+    padding-top: 10px;
+}
+.siteLogo img {
+    width: 60px;
+    margin-right: -3px;
+}
+.siteTitle {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 20px;
+}
+.siteTitle img {
+    vertical-align: middle;
+}
+@media (max-width: 800px) {
+   .siteTitle {
+        font-size: 20px;
+        word-spacing: 10px;
+    }
+    .siteTitle img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*
+*
+* Navigation
+*
+*/
+
+#menu {
+    text-align: center;
+}
+#menu li {
+    display: inline-block;
+}
+#menu a {
+    padding: 5px 20px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+#menu a:hover {
+    background-color: #ccc;
+}
+#menu li.active a {
+    background-color: #448b2b;
+    color: #fff;
+}
+
+/* Titles */
+h1, h2, h3 {
+}
+h1 {
+    margin-top: 1em;
+    margin-right: 20px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: "Fira Sans", sans-serif;
+}
+h2 {
+    margin-top: 1em;
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 0;
+    line-height: 1;
+}
+h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: #8c9a85;
+}
+@media (max-width: 640px) {
+   h1 {
+      font-size: 20px;
+   }
+}
+.subtitle {
+    font-size: 1.3em;
+    text-align: center;
+}
+.pageContent ul {
+    list-style-type: square;
+    margin-left: 3em;
+}
+.pageContent  ul ul {
+    list-style-type: disc;
+    margin-top: 0;
+}
+.three-cols-list {
+    margin-left: 0;
+}
+.three-cols-list li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+}
+.three-cols-list.clickable {
+    cursor: pointer;
+}
+.three-cols-list img {
+    max-width: 100%;
+}
+
+/*
+*
+* HOME
+*
+*/
+#splashImage {
+    overflow: hidden;
+    min-width: 100%;
+    white-space: nowrap;
+    max-height: calc(100vh - 200px);
+    min-height: 200px;
+}
+#actus img {
+}
+@media (min-width: 1024px) {
+    #actusContent {
+        width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+#actusContent {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ececec;
+    background-color: rgba(236,236,236,0.85);
+    box-shadow: 2px 2px 4px #ccc;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+#actus a {
+    color: #448b2b;
+}
+
+.table {
+    margin: 1em 0;
+}
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+.table th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.colorCategories {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 2em;
+}
+.colorCategories thead th {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 10px;
+}
+.colorCategories .colorCategory {
+    border-bottom: 1px solid #333;
+}
+.colorCategories .colorCategoryTitle {
+    margin-top: 0;
+    line-height: 1;
+    padding: 10px;
+    color: #000;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 1px #ccc;
+    width: 25%;
+}
+.colorCategory td {
+    padding: 10px;
+}
+.colorCategory td p:first-child {
+    margin-top: 0;
+}
+.colorCategory.white {
+    background-color: #efefef;
+}
+.colorCategory.white .colorCategoryTitle {
+    background-color: #fff;
+}
+.colorCategory.yellow {
+    background-color: #ffffab;
+}
+.colorCategory.yellow .colorCategoryTitle {
+    background-color: #ffef00;
+}
+.colorCategory.orange {
+    background-color: #fdd5a4;
+}
+.colorCategory.orange .colorCategoryTitle {
+    background-color: #ff8c00;
+}
+.colorCategory.green {
+    background-color: #8ff38f;
+}
+.colorCategory.green .colorCategoryTitle {
+    background-color: #00bd00;
+}
+.colorCategory.blue {
+    background-color: #a0cbff;
+}
+.colorCategory.blue .colorCategoryTitle {
+    background-color: #0569ff;
+}
+
+/*
+*
+* TABS
+*
+*/
+.tabSelectors {
+    border-bottom: 1px solid #448b2b;
+}
+.tabSelectors ul {
+    margin: 0 40px;
+    padding: 0;
+    list-style-type: none;
+}
+.tabSelectors li {
+    display: inline-block;
+    border: 1px solid #448b2b;
+    border-radius: 0 5px 0 0;
+    margin-bottom: -1px;
+}
+.tabSelectors li a {
+    padding: 0 20px;
+    line-height: 2em;
+    text-decoration: none;
+    color: #000;
+}
+.tabSelectors li.active {
+    border-bottom: 1px solid #fff;
+}
+
+/*
+*
+* PILLS
+*
+*/
+.pillSelectors {
+    margin: 3em auto;
+    padding: 1px;
+    text-align: center;
+}
+.pillSelectors div {
+    display: inline-block;
+    margin: 0 1em;
+    border: 8px solid transparent;
+    border-radius: 20px;
+}
+.pillSelectors div.active {
+    border-color: green;
+}
+.pillSelectors div a {
+    color: #fff;
+    font-size: 2em;
+    padding: 20px 50px;
+    background-color: blue;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    display: block;
+}
+
+/*
+*
+* AWARDS
+*
+*/
+#pageRecompenses .col {
+    margin-bottom: 20px;
+    padding: 0;
+}
+#pageRecompenses .col > div {
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #dedede;
+    border: 1px solid #ccc;
+}
+.awardSponsor {
+    line-height: 110px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.awardLogo {
+    vertical-align: middle;
+}
+table.awards {
+    table-layout: fixed;
+}
+.awards tr td {
+    padding: 0 6px;
+    width: 25%;
+    border-left: 1px solid gray;
+    vertical-align: top;
+}
+.awards tr td:first-child, .awards table tr td {
+    border: none;
+}
+.awards tr:nth-of-type(1) td, .awards tr:nth-of-type(3) td, .awards tr:nth-of-type(5) td {
+    text-align: center;
+    vertical-align: middle;
+}
+/*
+*
+* RESULTS
+*
+*/
+table.borders {
+    border-collapse: collapse;
+    width: 100%;
+}
+.borders tr td {
+    border: solid black 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: right;
+}
+.borders tr:first-child,
+.borders tr td:first-child {
+    font-weight: bold;
+}
+table .orange {
+    background-color: #ffb254;
+}
+table .yellow {
+    background-color: #ffe973;
+}
+table .green {
+    background-color: #aeffae;
+}
+table .blue {
+    background-color: #83e0ff;
+}
+table.ranking {
+    margin: auto;
+    border-collapse: collapse;
+}
+.ranking tr:nth-child(2n + 1),
+.contestRanking tbody tr:nth-child(2n),
+.classement_row_data:nth-child(2n + 1) {
+    background: #F2F6FF;
+}
+.ranking th, .ranking td {
+    padding: 3px;
+    border: 1px solid black;
+}
+.ranking th,
+.contestRanking thead,
+.classement_row_first {
+    background: #C0D0F8;
+    font-weight: bold;
+}
+
+/*
+*
+* Footer
+*
+*/
+#footer {
+    height: 60px;
+    background-color: #448b2b;
+    margin-top: 40px;
+}
+#copyright {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+#copyright a {
+    color: white;
+    text-decoration: underline;
+}
+
