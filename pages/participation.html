@@ -5,20 +5,121 @@
     <div class="tabSelectors">
       <ul>
         <li ng-class="{ active: isTabSet(1) }">
-            <a href ng-click="setTab(1)">Enseignants</a>
+            <a href ng-click="setTab(1)">Élèves</a>
         </li>
         <li ng-class="{ active: isTabSet(2) }">
-            <a href ng-click="setTab(2)">Élèves</a>
+            <a href ng-click="setTab(2)">Enseignants</a>
         </li>
         <li ng-class="{ active: isTabSet(3) }">
-            <a href ng-click="setTab(3)">Catégories</a>
+            <a href ng-click="setTab(3)">Accéder au concours</a>
+        </li>
+        <li ng-class="{ active: isTabSet(4) }">
+            <a href ng-click="setTab(4)">Valider une catégorie</a>
         </li>
       </ul>
     </div>
     <div class="tabs">
+
       <div class="tab" ng-show="isTabSet(1)">
+         <h2>Élèves : comment participer</h2>
+         <p>
+            Le concours Algoréa est ouvert aux élèves du CM1 à la Terminale. Il peut se faire en classe, à la maison, ou un peu des deux :
+         </p>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="50%">En classe</th>
+              <th>À la maison</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  Votre enseignant peut organiser des séances de concours ou de préparation en classe.
+                </p>
+                <p>
+                  Si vous participez en catégorie blanche, jaune ou orange, il vous donnera un code de groupe au début de chaque séance.
+                </p>
+                <p>
+                  Dans ce cas, la participation pourra se faire seul ou en binôme.
+                </p>
+              </td>
+              <td>
+                <p>
+                   Pour pouvoir faire le concours chez vous si vous ne le faites pas en classe, ou bien pour vous entraîner, vous aurez besoin d'un <strong>code de participant Algoréa</strong>.
+                </p>
+                <p>
+                  Avec ce code, vous pourrez aussi accéder à vos résultats, ou débloquer l'accès à une catégorie du concours.
+                </p>
+                <p>
+                  La participation sera individuelle uniquement.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+               <p>
+                  Pour les catégories verte et bleue, en classe comme à la maison, il faudra utiliser votre
+<strong>code de participant Algoréa</strong>. La participation est individuelle uniquement (pas de binômes)
+               </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+         Vous ne devez bien sûr pas faire la même épreuve du concours deux fois lors du même tour.
+        </p>
+        <h2>Obtenir un code de participant</h2>
+        <p>
+        Un code de participant pourra s'obtenir de 3 manières :
+        </p>
+        <p>
+        <strong>Attention</strong> : les codes de participants ne sont pas encore disponibles, nous sommes en train de tout préparer.
+        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="33%">Par un enseignant</th>
+              <th width="33%">Par un entraînement</th>
+              <th>Sur france-ioi.org</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  Vous avez participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor</a>, ou avez fait une séance Algoréa en classe&nbsp;?
+                </p>
+                <p>
+                  Votre enseignant pourra vous distribuer votre code de participant, imprimé depuis son interface coordinateur.
+                </p>
+              </td>
+              <td>
+                <p>
+                  Si vous faites un entraînement en accès libre et obtenez au moins 100 points, vous pourrez recevoir un code de participant.
+                </p>
+              </td>
+              <td>
+                <p>
+                  Si vous avez un compte sur le site <a href="http://france-ioi.org" target="_blank">france-ioi.org</a>, et que vous avez résolu au moins 12 exercices, vous pourrez obtenir un code de participant.
+                </p>
+                <p>
+                  L'interface pour obtenir ce code sera bientôt disponible ici.
+                  <!--Connectez-vous sur <a href="http://france-ioi.org">france-ioi.org</a> puis allez sur [cette page]-->
+                </p>
+              </td>
+            </tr>
+          </table>
+          <p>
+            <strong>Attention</strong> : il est interdit à une personne d'utiliser plusieurs codes de participant.  Si vous en avez obtenu deux suite à une fausse manipulation, vous pourrez bientôt les fusionner.
+          </p>
+      </div>
+      <div class="tab" ng-show="isTabSet(2)">
         <h2>Enseignants : faire participer vos élèves</h2>
-        <p>Pour organiser la participation de vos élèves aux entraînements et au concours, utilisez votre interface coordinateur. Deux modalités combinables sont proposées :</p>
+        <p>Pour organiser la participation de vos élèves aux entraînements et au concours, utilisez votre <a href="http://coordinateur.castor-informatique.fr" target="_blank">interface coordinateur</a>.</p>
+        <p>La participation peut se faire en partie en classe et en partie à la maison :</p>
 
         <table class="table">
           <thead>
@@ -46,18 +147,21 @@
             </tr>
             <tr>
               <td colspan="2">
-                <p>Les élèves qui ont atteint la <strong>catégorie verte</strong> ou bleue peuvent participer en classe ou à la maison, uniquement en utilisant leur <strong>code de participant Algoréa</strong>. Les binômes ne sont plus autorisés dans ces catégories.</p>
+                <p>Les élèves qui ont atteint la <strong>catégorie verte ou bleue</strong> peuvent participer en classe ou à la maison, uniquement en utilisant leur <strong>code de participant Algoréa</strong>. Les binômes ne sont plus autorisés dans ces catégories.</p>
               </td>
             </tr>
           </tbody>
         </table>
+        <p>
+           Dès la publication des résultats du concours Castor, pensez à distribuer leur code de participant à vos élèves, et à les inviter à se préparer à la maison.
+        </p>
         <h2>Allocation du temps en classe</h2>
         <p>En fonction du temps que vous pouvez consacrer en classe à Algoréa, nous vous conseillons plusieurs possibilités :</p>
 
         <table class="table">
           <thead>
             <tr>
-              <th width="25%">Temps de cours consacré à Algoréa </th>
+              <th width="24%">Temps scolaire<br/>consacré à Algoréa </th>
               <th>Notre suggestion d’organisation</th>
             </tr>
           </thead>
@@ -66,10 +170,8 @@
               <td>Aucun</td>
               <td>
                 <ul>
-                  <li>Distribuer les codes de participants Algoréa à vos élèves dès la publication des résultats du Castor
-                  </li><li>Proposer aux élèves de s’entraîner et faire chaque épreuve à la maison.
-                  </li><li>Rappeler aux élèves de participer au début de la période de chaque tour (Janvier, Mars et Mai).
-                  </li>
+                  <li>Proposer aux élèves de s’entraîner et faire chaque épreuve à la maison.</li>
+                  <li>À l'approche de chaque tour en Janvier, Mars et Mai, rappeler aux élèves de participer.</li>
                 </ul>
               </td>
             </tr>
@@ -77,14 +179,9 @@
               <td>1 à 3 séances de 45 min</td>
               <td>
                 <ul>
-                  <li>Privilégier l’organisation des épreuves du concours en classe (Janvier, Mars et Mai). Elles sont conçues pour progresser même sans entraînement préalable.
-                  </li><li>Proposer aux élèves de faire à la maison les épreuves que vous ne pouvez pas organiser en classe, de se préparer aux épreuves par des modules d'entraînement :
-                    <ul>
-                      <li>Distribuer les codes de participant Algorea
-                      </li><li>Informer de la possibilité de progresser de catégorie en réussissant des modules d'entraînement.
-                      </li>
-                    </ul>
-                  </li>
+                  <li>Privilégier l’organisation des épreuves du concours en classe (Janvier, Mars et Mai).<br/>Elles sont conçues pour progresser même sans entraînement préalable.
+                  </li><li>Encourager les élèves à progresser à la maison grâce aux contenus de prépartation.</li>
+                  <li>Inviter les élèves à poursuivre le concours chez eux à défaut de faire les trois tours en classe.</li>
                 </ul>
               </td>
             </tr>
@@ -92,117 +189,22 @@
               <td>Plus de 3 séances de 45 min</td>
               <td>
                 <ul>
-                  <li>Utiliser le concours Algoréa comme support de votre projet pédagogique d’enseignement de la programmation.
-                  </li><li>Organiser en classe les  épreuves du concours
-                  </li><li>Aider vos élèves à progresser de catégorie en organisant des séances d'entraînement : les modules d'entraînement, comme les épreuves du concours, sont différenciés en fonction des catégories et visent des compétences ciblées en programmation.
-                  </li>
+                  <li>Aider vos élèves à progresser lors de séances de préparation.</li>
+                  <li>En faire le support de votre projet pédagogique d’enseignement de la programmation.</li>
+                  <li>Organiser en classe les trois tours du concours.</li>
                 </ul>
               </td>
             </tr>
           </tbody>
         </table>
         <h2>Catégories de participation</h2>
-          <p>Chaque élève qui a participé au concours Castor se verra attribuer une catégorie initiale en fonction de son résultat, visible sur l’interface coordinateur après la publication des résultats.</p>
-          <p>Les élèves qui n’ont pas participé au Castor peuvent participer par défaut en catégorie blanche.</p>
-          <p>Vous pourrez ouvrir l’accès à l’épreuve en catégories blanche, jaune et orange à tout élève qui vous semble avoir les compétences correspondantes.</p>
-          <p class="txtcenter"><a href="#/#categroiesPresentation">voir la description des catégories</a></p>
-          <p>Pour accéder aux catégories verte et supérieures, un élève doit se qualifier lors d’un entraînement ou d’une épreuve précédente.</p>
-      </div>
-
-      <div class="tab" ng-show="isTabSet(2)">
-         <h2>Élèves : comment participer</h2>
-         <p>
-            Le concours Algoréa peut se faire en classe, à la maison, ou un peu des deux :
-         </p>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th width="50%">En classe</th>
-              <th>À la maison</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <p>
-                  Votre enseignant peut organiser des séances d'entraînement ou de concours en classe, pour les catégories blanche, jaune et orange.
-                </p>
-                <p>
-                  Dans ce cas, il vous donnera un code de groupe au début de chaque séance.
-                </p>
-                <p>
-                  La participation pourra se faire seul ou en binôme.
-                </p>
-              </td>
-              <td>
-                <p>
-                   Pour pouvoir faire le concours chez vous si vous ne le faites pas en classe, ou bien pour vous entraîner, vous aurez besoin d'un code de participant Algoréa.
-                </p>
-                <p>
-                  Avec ce code, vous pourrez accéder aux résultats, ou débloquer des catégories.
-                </p>
-                <p>
-                  La participation sera individuelle uniquement.
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-               <p>
-                  Pour les catégories verte et bleue, en classe comme à la maison, il faudra utiliser votre
-<strong>code de participant Algoréa</strong>. La participation est individuelle uniquement (pas de binômes)
-               </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-         Vous ne devez bien sûr pas faire la même épreuve du concours deux fois lors du même tour.
-        </p>
-        <h2>Obtenir un code de participant</h2>
-        <p>
-        Un code de participant pourra s'obtenir de 3 manières :
-        </p>
-        <p>
-        <strong>Attention</strong> : les codes de participants ne sont pas encore disponibles
-        </p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th width="33%">Par un enseignant</th>
-              <th width="33%">Par un entraînement</th>
-              <th>Sur france-ioi.org</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <p>
-                  Vous avez participé au concours Castor, ou avez fait une séance Algoréa en classe&nbsp;?
-                </p>
-                <p>
-                  Votre enseignant pourra vous distribuer votre code de participant, imprimé depuis son interface coordinateur.
-                </p>
-              </td>
-              <td>
-                <p>
-                  Si vous faites un entraînement en accès libre et obtenez au moins 100 points, vous pourrez demander un code de participant.
-                </p>
-              </td>
-              <td>
-                <p>
-                  Si vous avez un compte sur le site france-ioi.org, et que vous avez résolu au moins 12 exercices, vous pouvez obtenir un code de participant.
-                </p>
-                <p>
-                  Connectez-vous sur <a href="http://france-ioi.org">france-ioi.org</a> puis allez sur [cette page]
-                </p>
-              </td>
-            </tr>
-          </table>
           <p>
-            <strong>Attention</strong> : il est interdit à une personne d'utiliser plusieurs codes de participants.  Si vous en avez obtenu deux suite à une fausse manipulation, vous pourrez bientôt les fusionner.
+          Chaque tour du concours et module de préparation est disponible dans plusieurs catégories, représentées par des couleurs : blanche pour les débutants, puis jaune, orange, vert et bleu. Chacune vise des compétences ciblées en programmation.
           </p>
+          <p class="txtcenter"><a href="#/#categroiesPresentation">Voir la description des catégories</a></p>
+          <p>Chaque élève qui a participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> démarre dans une catégorie qui dépend de son score.</p>
+          <p>Vous pourrez ouvrir l’accès à l’épreuve en catégories blanche, jaune et orange à tout élève qui vous semble avoir les compétences correspondantes. Les élèves pourront ensuite progresser parmi les catégories d'un tour à l'autre.</p>
+          <p>La progression et la catégorie de vos élèves est consultable sur votre <a href="http://coordinateur.castor-informatique.fr" target="_blank">interface coordinateur</a> après la publication des résultats du Castor.</p>
       </div>
 
       <div class="tab" ng-show="isTabSet(3)">
@@ -212,7 +214,7 @@
         </p>
         <h3>1) Le concours Castor</h3>
         <p>
-          Avoir participé au concours Castor donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu. L'enseignant s'occupe de transmettre l'accès.
+          Avoir participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu. L'enseignant s'occupe de transmettre l'accès.
         </p>
         <h3>2) La préparation</h3>
         <p>
@@ -224,53 +226,66 @@
         </p>
         <h3>4) Le site france-ioi.org</h3>
         <p>
-          Avoir un compte sur <a href="http://france-ioi.org">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès direct au concours, dans une catégorie qui dépend du nombre d'exercices résolus et des niveaux validés.
+          Avoir un compte sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès direct au concours, dans une catégorie qui dépend du nombre d'exercices résolus et des niveaux validés.
         </p>
-        <p>
-          Allez sur [cette page] pour voir les détails.
-        </p>
-        <h2>Valider une catégorie</h2>
-        <p>
-         Lors de chaque épreuve du concours Algoréa, votre objectif doit être d’obtenir un maximum de points à l’épreuve, pour bien vous classer dans cette catégorie, et valider cette catégorie.
-        </p>
-        <p>
-          Valider une catégorie signifie que vous avez obtenu plus d’un certain score (en général 100 points minimum), et ainsi prouver que vous maîtrisez les concepts associés à cette catégorie. Selon votre score, vous pouvez avoir de 2 étoiles à 4 étoile rattachés à votre catégorie.
-        </p>
-        <p>
-          Ainsi si vous avez obtenu 100 points lors d’une épreuve de concours en catégorie orange, vous aurez validé : catégorie orange, 2 étoiles. Etc. Le nombre de points pour valider 3 ou 4 étoiles sera fixé après chaque concours.
-        </p>
-<!--
-        <table class="colorCategories">
+        <center>
+          <table class="colorCategories" style="width:500px;">
           <thead>
             <tr>
-              <th class="colorCategoryTitle">Catégorie</th>
-              <th>Conditions d’accès via france-ioi.org</th>
+              <th class="colorCategoryTitle" style="font-size:16px">Catégorie</th>
+              <th style="font-size:16px">Conditions d’accès via france-ioi.org</th>
             </tr>
           </thead>
           <tbody>
             <tr class="colorCategory white">
-              <td class="colorCategoryTitle">Blanche</td>
+              <td class="colorCategoryTitle" style="font-size:14px">Blanche</td>
               <td>Avoir validé 12 exercices</td>
             </tr>
             <tr class="colorCategory yellow">
-              <td class="colorCategoryTitle">Jaune</td>
+              <td class="colorCategoryTitle" style="font-size:14px">Jaune</td>
               <td>Avoir validé 20 exercices</td>
             </tr>
             <tr class="colorCategory orange">
-              <td class="colorCategoryTitle">Orange</td>
+              <td class="colorCategoryTitle" style="font-size:14px">Orange</td>
               <td>Avoir validé 50 exercices</td>
             </tr>
             <tr class="colorCategory green">
-              <td class="colorCategoryTitle">Verte</td>
+              <td class="colorCategoryTitle" style="font-size:14px">Verte</td>
               <td>Avoir validé le niveau 2 du parcours général</td>
             </tr>
             <tr class="colorCategory blue">
-              <td class="colorCategoryTitle">Bleue</td>
+              <td class="colorCategoryTitle" style="font-size:14px">Bleue</td>
               <td>Avoir validé le niveau 3 du parcours général</td>
             </tr>
           </tbody>
         </table>
--->
+        </center>
+      </div>
+      <div class="tab" ng-show="isTabSet(4)">
+        <h2>Valider une catégorie</h2>
+        <p>
+         Lors de chaque tour du concours Algoréa, l'objectif est d’obtenir un maximum de points pour bien se classer dans sa catégorie, et si possible, valider cette catégorie et obtenir l'accès à la catégorie suivante.
+        </p>
+        <p>
+          Valider une catégorie signifie avoir montré que l'on maîtrise les compétences associés à cette catégorie.
+        </p>
+        <p>
+          Pour cela, il faut atteindre ou dépasser un certain score lors du concours, en général de 100 points. En bonus, selon votre score exact, vous pourrez obtenir de 2 étoiles à 4 étoile rattachés à votre catégorie.
+        </p>
+        <p>
+          Ainsi si vous avez obtenu 100 points lors d’un tour du concours en catégorie jaune, vous aurez validé : catégorie jaune, 2 étoiles, et pourrez faire le tour suivant en catégorie orange. Le nombre de points pour valider 3 ou 4 étoiles sera fixé après chaque concours.
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     </div>
   </div>
