@@ -438,6 +438,31 @@ h3 {
 *
 */
 .tabSelectors {
+    background-color: #c7e0bf;
+    box-shadow: 5px 5px 8px #eee;
+    border-bottom: 3px solid #448b2b;
+}
+.tabSelectors ul {
+    margin: 0 0 0 2em;
+    padding: 0;
+    list-style-type: none;
+}
+.tabSelectors li {
+    display: inline-block;
+}
+.tabSelectors li a {
+    padding: 0 20px;
+    line-height: 2em;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+.tabSelectors li.active a {
+    background-color: #448b2b;
+    color: #fff;
+}
+/*
+.tabSelectors {
     border-bottom: 1px solid #448b2b;
 }
 .tabSelectors ul {
@@ -456,10 +481,14 @@ h3 {
     line-height: 2em;
     text-decoration: none;
     color: #000;
+    display: block;
 }
 .tabSelectors li.active {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffe500;
 }
+.tabSelectors li.active a {
+    background-color: #ffe500;
+}*/
 
 
 /*
