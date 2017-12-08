@@ -212,23 +212,37 @@
         <p>
           Il y a quatre manières d'obtenir l'accès au concours dans une catégorie donnée :
         </p>
-        <h3>1) Le concours Castor</h3>
-        <p>
-          Avoir participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu. L'enseignant s'occupe de transmettre l'accès.
-        </p>
-        <h3>2) La préparation</h3>
-        <p>
-          Obtenir 100 points ou plus lors d’une <a href="#/preparation">préparation</a> dans une catégorie blanche, jaune ou orange, ouvre l’accès au concours dans cette même catégorie.
-        </p>
-        <h3>3) Le concours Algoréa</h3>
-        <p>
-          Atteindre 100 points ou plus lors du concours Algoréa dans une catégorie, donne immédiatement l’accès au concours de la catégorie suivante. Un seuil inférieur à 100 peut être annoncé lors de la publication les résultats.
-        </p>
-        <h3>4) Le site france-ioi.org</h3>
-        <p>
-          Avoir un compte sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès direct au concours, dans une catégorie qui dépend du nombre d'exercices résolus et des niveaux validés.
-        </p>
-        <center>
+        <div class="vignettes">
+          <div class="vignette">
+            <h3>Le concours Castor</h3>
+            <img src="images/castor_small.png" alt="logo concours Castor" class="fl" />
+            <p>
+              Avoir participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu. L'enseignant s'occupe de transmettre l'accès.
+            </p>
+          </div>
+          <div class="vignette">
+            <h3>La préparation</h3>
+            <p>
+              Obtenir 100 points ou plus lors d’une <a href="#/preparation">préparation</a> dans une catégorie blanche, jaune ou orange, ouvre l’accès au concours dans cette même catégorie.
+            </p>
+          </div>
+          <div class="vignette">
+            <h3>Le concours Algoréa</h3>
+            <img src="images/logo.png" alt="logo concours Algoréa" class="fl">
+            <p>
+              Atteindre 100 points ou plus lors du concours Algoréa dans une catégorie, donne immédiatement l’accès au concours de la catégorie suivante. Un seuil inférieur à 100 peut être annoncé lors de la publication les résultats.
+            </p>
+          </div>
+          <div class="vignette">
+            <h3>Le site france-ioi.org</h3>
+            <img src="images/fioi.png" alt="logo France ioi" class="fr">
+            <p>
+              Avoir un compte sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès direct au concours, dans une catégorie qui dépend du nombre d'exercices résolus et des niveaux validés.
+            </p>
+            <p class="txtcenter"><a href ng-click="custom=!custom">Voir le détail</a></p>
+          </div>
+        </div>
+        <center ng-show="custom">
           <table class="colorCategories" style="width:500px;">
           <thead>
             <tr>
