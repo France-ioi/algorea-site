@@ -366,7 +366,6 @@ h3 {
 .colorCategories {
     border: 1px solid #ccc;
     box-shadow: 5px 5px 8px #eee;
-    table-layout: fixed;
     margin: 2em auto;
     width: calc(100% - 2em);
     text-align: left;
@@ -428,12 +427,52 @@ table td ul:first-child{
     background-color: #0037ff;
     color: #efefef;
 }
+#pagePreparation .colorCategoryTitle {
+    padding: 3px 10px;
+}
 #pagePreparation .colorCategoryTitle ul {
     font-size: 1rem;
 }
 #pagePreparation .colorCategories .activityTitle {
     font-size: 1.5em;
 }
+#pagePreparation .colorCategories .colorCategory-description {
+    width: 50%;
+    vertical-align: middle;
+}
+#pagePreparation .colorCategories .colorCategory-content {
+    width: calc(50% / 3);
+    border-left: 1px solid #333;
+    background-color: #fff;
+}
+.languageSelector {
+    border-left: 1px solid #333;
+}
+.languageSelector ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.languageSelector a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Fira Sans', 'Open Sans', sans-serif;
+    border: 1px solid #333;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 3px;
+    box-shadow: 3px 3px 3px #9c9696, -1px -1px 3px #ccc inset;
+}
+.languageSelector a:hover {
+    background-color: #448b2b;
+    color: #fff;
+    box-shadow: 3px 3px 3px #9c9696, -1px -1px 3px #333 inset;
+}
+
 
 /*
 *
