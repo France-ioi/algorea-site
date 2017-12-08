@@ -242,10 +242,12 @@ p, ul {
     display: inline-block;
 }
 #menu a {
-    padding: 5px 20px;
+    padding: 5px 20px 3px;
     display: inline-block;
     color: #000;
     text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
 }
 #menu a:hover {
     background-color: #ccc;
@@ -276,7 +278,6 @@ h2 {
 h3 {
     font-size: 1.5em;
     margin-top: 1em;
-    color: #8c9a85;
 }
 @media (max-width: 640px) {
    h1 {
@@ -347,13 +348,17 @@ h3 {
 }
 
 .table {
-    margin: 1em 0;
+    margin: 1em 10px 1em 0;
+    box-shadow: 5px 5px 8px #eee;
+    border-radius: 6px;
+    width: 100%;
 }
 .table th, .table td {
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     padding: 10px;
 }
 .table th {
+    background-color: #fff1e5;
     font-weight: bold;
     text-align: center;
 }
@@ -362,8 +367,8 @@ h3 {
     border: 1px solid #ccc;
     box-shadow: 5px 5px 8px #eee;
     table-layout: fixed;
-    width: 100%;
-    margin-top: 2em;
+    margin: 2em auto;
+    width: calc(100% - 2em);
     text-align: left;
 }
 .colorCategories thead th {
@@ -373,20 +378,23 @@ h3 {
     padding: 10px;
 }
 .colorCategories .colorCategory {
-    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+.colorCategories .colorCategory:first-child {
+    border-top: none;
 }
 .colorCategories .colorCategoryTitle {
     padding: 10px;
     color: #000;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 1px #ccc;
+    font-size: 1.3em;
     width: 25%;
     vertical-align: middle;
 }
 .colorCategory td {
     padding: 10px;
 }
-.colorCategory td p:first-child {
+table td p:first-child,
+table td ul:first-child{
     margin-top: 0;
 }
 .colorCategory.white {
@@ -411,19 +419,14 @@ h3 {
     background-color: #8ff38f;
 }
 .colorCategory.green .colorCategoryTitle {
-    background-color: #00bd00;
+    background-color: #06d606;
 }
 .colorCategory.blue {
-    background-color: #a0cbff;
+    background-color: #93beff;
 }
 .colorCategory.blue .colorCategoryTitle {
-    background-color: #0569ff;
-}
-#pagePreparation .colorCategories td {
-    border: 1px solid #333;
-}
-#pagePreparation .colorCategoryTitle {
-    width: auto;
+    background-color: #0037ff;
+    color: #efefef;
 }
 #pagePreparation .colorCategoryTitle ul {
     font-size: 1rem;
@@ -593,7 +596,7 @@ table .green {
     background-color: #8ff38f;
 }
 table .blue {
-    background-color: #a0cbff;
+    background-color: #93beff;
 }
 table.ranking {
     margin: auto;
