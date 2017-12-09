@@ -1,48 +1,48 @@
 var myApp = angular.module('algorea', ['ngRoute']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-
+   var v = "?v=3";
    $routeProvider
 
    // route for the main page
    .when('/', {
-      templateUrl : 'pages/presentation.html',
+      templateUrl : 'pages/presentation.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the qualification page
    /*.when('/qualification', {
-      templateUrl : 'pages/qualification.html',
+      templateUrl : 'pages/qualification.html' + v,
       controller  : 'PageCtrl'
    })*/
 
    // route for the participation page
    .when('/participation', {
-      templateUrl : 'pages/participation.html',
+      templateUrl : 'pages/participation.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the preparation page
    .when('/preparation', {
-      templateUrl : 'pages/preparation.html',
+      templateUrl : 'pages/preparation.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the awards page
    .when('/recompenses', {
-      templateUrl : 'pages/awards.html',
+      templateUrl : 'pages/awards.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the results page
    .when('/resultats', {
-      templateUrl : 'pages/results.html',
+      templateUrl : 'pages/results.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the who are we page
    .when('/quiSommesNous', {
-      templateUrl : 'pages/whoAreWe.html',
+      templateUrl : 'pages/whoAreWe.html' + v,
       controller  : 'PageCtrl'
    })
 
@@ -54,13 +54,13 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
 
    // route for the legal informations page
    .when('/infosLegales', {
-      templateUrl : 'pages/legalInformation.html',
+      templateUrl : 'pages/legalInformation.html' + v,
       controller  : 'PageCtrl'
    })
 
    // route for the instruction page
    .when('/infosTour2', {
-      templateUrl : 'infos/instructionsTour2.html?v=23',
+      templateUrl : 'infos/instructionsTour2.html' + v,
       controller  : 'PageCtrl'
    })
 
