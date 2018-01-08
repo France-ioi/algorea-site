@@ -16,6 +16,10 @@
     <div class="tabs">
 
       <div class="tab" ng-show="isTabSet(1)">
+         <h2>Plateforme du concours</h2>
+         <p>
+            Si vous avez déjà votre code de participation ou bien un code de groupe fourni par un enseignant,<br/>allez directement sur <a href="http://concours.castor-informatique.fr" target="_blank">la plateforme du concours</a> et entrez votre code pour démarrer.
+         </p>
          <h2>Se qualifier dans une catégorie</h2>
          <p>
             Le concours Algoréa est ouvert aux élèves du CM1 à la Terminale. Chacun peut obtenir l'accès à une <a href="#/#categroiesPresentation">catégorie</a> du concours de quatre manières :
@@ -25,13 +29,16 @@
             <h3>Le concours Castor</h3>
             <img src="images/castor_small.png" alt="logo concours Castor" class="fl" />
             <p>
-              Avoir participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu.
+              Avoir participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor</a> donne l’accès au concours dans une catégorie parmi blanche, jaune ou orange selon le score obtenu.
             </p>
           </div>
           <div class="vignette">
             <h3>La préparation</h3>
             <p>
-              Obtenir 100 points ou plus lors d’une <a href="#/preparation">préparation</a> dans une catégorie blanche, jaune ou orange, ouvre l’accès au concours dans cette même catégorie.
+              Si vous avez déjà un code de participant, obtenir 100 points ou plus lors d’une préparation dans une catégorie jaune ou orange, vous ouvre l’accès au concours dans cette même catégorie.
+            </p>
+            <p>
+              Pour cela, faites une épreuve de préparation en entrant votre code de participant sur<br/><a href="http://castor-informatique.fr" target="_blank">concours.castor-informatique.fr</a>.
             </p>
           </div>
           <div class="vignette">
@@ -45,9 +52,11 @@
             <h3>Le site france-ioi.org</h3>
             <img src="images/fioi.png" alt="logo France ioi" class="fr">
             <p>
-              Avoir un compte sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès au concours, dans une catégorie qui dépend du nombre d'exercices résolus.
+              Avoir un compte sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> et y résoudre au minimum 12 exercices donne accès au concours, dans une catégorie qui dépend du nombre d'exercices résolus. <a href ng-click="custom=!custom">Voir le détail</a>.
             </p>
-            <p class="txtcenter"><a href ng-click="custom=!custom">Voir le détail</a></p>
+            <p>
+               Allez ensuite sur <a href="http://www.france-ioi.org/algorea/algoreaLink.php" target="_blank">cette page</a> pour obtenir votre code de participant.
+            </p>
           </div>
         </div>
         <center ng-show="custom">
@@ -93,13 +102,10 @@
            Si vous avez participé au concours Castor, ou à des préparations Algoréa en classe, votre enseignant pourra vous transmettre votre code en l'imprimant depuis son interface coordinateur.
         </p>
         <p>
-           Sinon, vous l'obtiendrez lors d'une préparation Algoréa, ou bien en résolvant des exercices sur france-ioi.org.
+           Sinon, vous pouvez l'obtenir en résolvant au moins 12 exercices sur <a href="http://france-ioi.org" target="_blank">france-ioi.org</a> puis en allant sur <a href="http://www.france-ioi.org/algorea/algoreaLink.php" target='_blank'>cette page</a>.
         </p>
         <p>
            Une même personne ne doit jamais utiliser plus d'un code de participant. <!--Si vous en avez obtenu deux suite à une fausse manipulation, vous pourrez bientôt les fusionner.-->
-        </p>
-        <p>
-        <strong>Attention</strong> : ces codes ne sont pas encore disponibles, nous sommes en train de tout préparer.
         </p>
         <h2>Participer en classe ou à la maison</h2>
          <p>
