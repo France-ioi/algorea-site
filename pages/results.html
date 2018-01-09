@@ -8,15 +8,15 @@
     <div class="tabSelectors">
       <ul>
         <li ng-class="{ active: isTabSet(1) }">
-            <a href ng-click="setTab(1)">Premier tour 2017</a>
+          <a href ng-click="setTab(1)">Premier tour 2017</a>
         </li><li ng-class="{ active: isTabSet(2) }">
-            <a href ng-click="setTab(2)">Deuxième tour 2017</a>
+          <a href ng-click="setTab(2)">Deuxième tour 2017</a>
         </li><li ng-class="{ active: isTabSet(3) }">
-            <a href ng-click="setTab(3)">Troisième tour 2017</a>
+          <a href ng-click="setTab(3)">Troisième tour 2017</a>
         </li><li ng-class="{ active: isTabSet(4) }">
-            <a href ng-click="setTab(4)">Demi-finale 2017</a>
+          <a href ng-click="setTab(4)">Demi-finale 2017</a>
         </li><li ng-class="{ active: isTabSet(5) }">
-            <a href ng-click="setTab(5)">Finale 2017</a>
+          <a href ng-click="setTab(5)">Finale 2017</a>
         </li>
       </ul>
     </div>
@@ -24,21 +24,21 @@
       <div class="tab" ng-show="isTabSet(1)">
         <h2>Premier tour 2017</h2>
         <p>Vous pouvez accéder à votre score sur <a href='http://concours.castor-informatique.fr' target="_blank">concours.castor-informatique.fr</a> en saisissant le code qui vous a été transmis au démarrage de l'épreuve. Si vous avez utilisé un code de qualification pour participer, utilisez ce code. Si vous avez participé en classe, votre coordinateur a accès à votre score.</p>
-        <p>Tous les participants auront accès au 2ème tour, du 6 au 19 mars 2017, et seront répartis en deux catégories :</p>
+        <p>Tous les participants auront accès au 2<sup>e</sup> tour, du 6 au 19 mars 2017, et seront répartis en deux catégories :</p>
         <ul>
            <li><p class="txtbold">Catégorie jaune</p>
-           <p>Destinée à tous ceux qui ont obtenu moins de 100 points lors du tour de Janvier</p>
-           <p>L'épreuve sera similaire au premier tour, en 45 minutes mais avec des sujets différents</p>
+           <p>Destinée à tous ceux qui ont obtenu moins de 100 points lors du tour de janvier</p>
+           <p>L'épreuve sera similaire au premier tour, en 45 minutes mais avec des sujets différents.</p>
            </li>
            <li><p class="txtbold">Catégorie orange</p>
-           <p>Destinée à tous ceux qui ont obtenu 100 points ou plus lors du tour de Janvier</p>
-           <p>L'épreuve fera appel à des notions plus avancées comme les variables et boucles tant que, et durera 1h45.<br/></p>
+           <p>Destinée à tous ceux qui ont obtenu 100 points ou plus lors du tour de janvier</p>
+           <p>L'épreuve fera appel à des notions plus avancées comme les variables et boucles tant que, et durera 1 h 45.<br/></p>
            </li>
         </ul>
         <p>Vous pouvez déterminer votre classement dans la grille suivante à partir de votre score et de votre classe.</p>
-        <p>Par exemple si vous avez obtenu 100 points et êtes en 6ème, votre classement est 2871ème sur 10985 6èmes ayant participé, et 23888ème parmi l'ensemble des 47493 participants.</p>
-        <table class='borders' cellspacing=0>
-          <tr><td>Score</td>  <td>CM1</td>  <td>CM2</td>  <td>6ème</td> <td>5ème</td> <td>4ème</td> <td>3ème</td> <td>2nde</td> <td>1ère</td> <td>Terminale</td>  <td>2nde<br/>pro</td> <td>1ère<br/>pro</td> <td>Terminale<br/>pro</td>  <td>Classement général</td></tr>
+        <p>Par exemple si vous avez obtenu 100 points et êtes en 6<sup>e</sup>, votre classement est 2871<sup>e</sup> sur 10 985 6<sup>es</sup> ayant participé, et 23 888<sup>e</sup> parmi l'ensemble des 47 493 participants.</p>
+        <table class='borders'>
+          <tr><td>Score</td> <td>CM1</td> <td>CM2</td> <td>6<sup>e</sup></td> <td>5<sup>e</sup></td> <td>4<sup>e</sup></td> <td>3<sup>e</sup></td> <td>2<sup>de</sup></td> <td>1<sup>re</sup></td> <td>T<sup>le</sup></td> <td>2<sup>de</sup> pro</td> <td>1<sup>re</sup> pro</td> <td>T<sup>le</sup> pro</td> <td>Classement général</td></tr>
           <tr class='orange'><td>160</td> <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td>  <td>1</td></tr>
           <tr class='orange'><td>150</td> <td>2</td>  <td>4</td>  <td>14</td> <td>27</td> <td>59</td> <td>116</td>  <td>112</td>  <td>176</td>  <td>133</td>  <td>1</td>  <td>2</td>  <td>3</td>  <td>638</td></tr>
           <tr class='orange'><td>140</td> <td>3</td>  <td>8</td>  <td>51</td> <td>134</td>  <td>242</td>  <td>440</td>  <td>401</td>  <td>458</td>  <td>319</td>  <td>3</td>  <td>2</td>  <td>4</td>  <td>2054</td></tr>
@@ -61,20 +61,20 @@
 
       <div class="tab" ng-show="isTabSet(2)">
         <h2>Deuxième tour 2017</h2>
-        <p>Voici les résultats du 2ème tour 2017.</p>
+        <p>Voici les résultats du 2<sup>e</sup> tour 2017.</p>
         <p>Changements de catégories :</p>
         <ul>
-          <li><p>Les participants qui ont obtenu 90 points ou plus en catégorie jaune passent en catégorie orange pour le 3ème tour.</p>
-          <li><p>Les participants qui ont obtenu 100 points ou plus en catégorie orange passent en catégorie verte pour le 3ème tour.</p>
+          <li><p>Les participants qui ont obtenu 90 points ou plus en catégorie jaune passent en catégorie orange pour le 3<sup>e</sup> tour.</p>
+          <li><p>Les participants qui ont obtenu 100 points ou plus en catégorie orange passent en catégorie verte pour le 3<sup>e</sup> tour.</p>
         </ul>
-        <p>Le 3ème tour, sera ouvert du 2 au 15 mai aux participants des catégories orange et verte.</p>
+        <p>Le 3<sup>e</sup> tour sera ouvert du 2 au 15 mai aux participants des catégories orange et verte.</p>
 
-        <h3>Résultats du 2ème tour en catégorie Jaune :</h3>
+        <h3>Résultats du 2<sup>e</sup> tour en catégorie Jaune</h3>
 
         <p>Vous pouvez déterminer votre classement en fonction de votre score et de votre classe :</p>
 
-        <table class="borders" cellspacing="0">
-          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6ème</td><td>5ème</td><td>4ème</td><td>3ème</td><td>2nde</td><td>1ère</td><td>Terminale</td><td>2nde<br>pro</td><td>1ère<br>pro</td><td>Terminale<br>pro</td><td>Classement<br>général</td></tr>
+        <table class="borders">
+          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6<sup>e</sup></td><td>5<sup>e</sup></td><td>4<sup>e</sup></td><td>3<sup>e</sup></td><td>2<sup>de</sup></td><td>1<sup>re</sup></td><td>T<sup>le</sup></td><td>2<sup>de</sup> pro</td><td>1<sup>re</sup> pro</td><td>T<sup>le</sup> pro</td><td>Classement général</td></tr>
           <tr class="orange"><td>160</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>1</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td></tr>
           <tr class="orange"><td>150</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>1</td><td>1</td><td>1</td><td>6</td><td>6</td><td>5</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>15</td></tr>
           <tr class="orange"><td>140</td><td>1</td><td>&nbsp;</td><td>3</td><td>3</td><td>5</td><td>3</td><td>25</td><td>12</td><td>17</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>62</td></tr>
@@ -94,11 +94,11 @@
           </tbody>
         </table>
 
-        <h3>Résultats du 2ème tour en catégorie Orange :</h3>
+        <h3>Résultats du 2<sup>e</sup> tour en catégorie Orange</h3>
         <p>Vous pouvez déterminer votre classement en fonction de votre score et de votre classe :</p>
 
-        <table class="borders" cellspacing="0">
-          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6ème</td><td>5ème</td><td>4ème</td><td>3ème</td><td>2nde</td><td>1ère</td><td>Terminale</td><td>2nde<br>pro</td><td>1ère<br>pro</td><td>Terminale<br>pro</td><td>Classement<br>général</td></tr>
+        <table class="borders">
+          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6<sup>e</sup></td><td>5<sup>e</sup></td><td>4<sup>e</sup></td><td>3<sup>e</sup></td><td>2<sup>de</sup></td><td>1<sup>re</sup></td><td>T<sup>le</sup></td><td>2<sup>de</sup> pro</td><td>1<sup>re</sup> pro</td><td>T<sup>le</sup> pro</td><td>Classement général</td></tr>
           <tr class="green"><td>160</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td></tr>
           <tr class="green"><td>157</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>8</td><td>12</td><td>8</td><td>12</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>41</td></tr>
           <tr class="green"><td>156</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>11</td><td>13</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>50</td></tr>
@@ -136,8 +136,8 @@
 
       <div class="tab" ng-show="isTabSet(3)">
         <h2>Troisième tour 2017</h2>
-        <p>Voici les résultats du 3ème tour 2017.</p>
-        <p>Accès à la demi-finale</p>
+        <p>Voici les résultats du 3<sup>e</sup> tour 2017.</p>
+        <h3>Accès à la demi-finale</h3>
         <ul>
           <li><p>
              Les participants qui ont obtenu 70 points ou plus en catégorie verte sont sélectionnés pour la demi-finale.
@@ -148,11 +148,11 @@
         </ul>
         <p>La demi-finale est ouverte jusqu'au 12 juin inclus sur <a href="http://concours.algorea.org" target="_blank">concours.algorea.org</a>.</p>
 
-        <h3>Résultats du 3ème tour en catégorie Orange :</h3>
+        <h3>Résultats du 3<sup>e</sup> tour en catégorie Orange</h3>
         <p>Vous pouvez déterminer votre classement définitif en fonction de votre score et de votre classe :</p>
 
-        <table class="borders" cellspacing="0">
-          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6ème</td><td>5ème</td><td>4ème</td><td>3ème</td><td>2nde</td><td>1ère</td><td>Terminale</td><td>2nde<br>pro</td><td>1ère<br>pro</td><td>Terminale<br>pro</td><td>Classement<br>général</td></tr>
+        <table class="borders">
+          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6<sup>e</sup></td><td>5<sup>e</sup></td><td>4<sup>e</sup></td><td>3<sup>e</sup></td><td>2<sup>de</sup></td><td>1<sup>re</sup></td><td>T<sup>le</sup></td><td>2<sup>de</sup> pro</td><td>1<sup>re</sup> pro</td><td>T<sup>le</sup> pro</td><td>Classement général</td></tr>
           <tr class="green"><td>150</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td></tr>
           <tr class="green"><td>148</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>3</td></tr>
           <tr class="green"><td>145</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>4</td></tr>
@@ -179,11 +179,11 @@
           </tbody>
         </table>
 
-        <h3>Résultats du 3ème tour en catégorie Verte :</h3>
+        <h3>Résultats du 3<sup>e</sup> tour en catégorie Verte</h3>
         <p>Vous pouvez déterminer votre classement définitif en fonction de votre score et de votre classe :</p>
 
-        <table class="borders" cellspacing="0">
-          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6ème</td><td>5ème</td><td>4ème</td><td>3ème</td><td>2nde</td><td>1ère</td><td>Terminale</td><td>2nde<br>pro</td><td>1ère<br>pro</td><td>Terminale<br>pro</td><td>Classement<br>général</td></tr>
+        <table class="borders">
+          <tbody><tr><td>Score</td><td>CM1</td><td>CM2</td><td>6<sup>e</sup></td><td>5<sup>e</sup></td><td>4<sup>e</sup></td><td>3<sup>e</sup></td><td>2<sup>de</sup></td><td>1<sup>re</sup></td><td>T<sup>le</sup></td><td>2<sup>de</sup> pro</td><td>1<sup>re</sup> pro</td><td>T<sup>le</sup> pro</td><td>Classement général</td></tr>
           <tr class="blue"><td>120</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td></tr>
           <tr class="blue"><td>110</td><td>&nbsp;</td><td>&nbsp;</td><td>2</td><td>&nbsp;</td><td>2</td><td>8</td><td>10</td><td>12</td><td>11</td><td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>40</td></tr>
           <tr class="blue"><td>100</td><td>&nbsp;</td><td>&nbsp;</td><td>4</td><td>1</td><td>3</td><td>15</td><td>18</td><td>21</td><td>26</td><td>&nbsp;</td><td>&nbsp;</td><td>1</td><td>83</td></tr>
@@ -202,7 +202,7 @@
 
       <div class="tab" ng-show="isTabSet(4)">
         <h2>Demi-finale 2017</h2>
-        <p>Les résultats de la demi-finale 2017 seront publiés prochainement, merci pour votre patience, nous sommes pour l'instant très occupés par la préparation du concours 2018 mais ne vous oublions pas.</p>
+        <p>Les résultats de la demi-finale 2017 seront publiés prochainement, merci pour votre patience. Nous sommes pour l'instant très occupés par la préparation du concours 2018 mais ne vous oublions pas.</p>
         <p>Les finalistes ont été contactés directement.</p>
       </div>
 
@@ -210,12 +210,12 @@
         <h2>Finale 2017</h2>
         <p>La finale du concours Algoréa 2017 s'est déroulée du 5 au 9 juillet. 21 élèves ont participé, dont 8 lycéens et 13 collégiens.</p>
         <p>
-        <center><img src="images/finale_algorea_2017.png" style="width:700px"/></center>
+        <div class="txtcenter"><img src="images/finale_algorea_2017.png" style="width:700px"/></div>
         </p>
         <p> Voici les résultats : </p>
 
         <table class="ranking">
-          <tr> <th> Rang </th> <th> Élève </th> <th> Classe en 2016-2017 </th><th>Rang par classe</th> </tr>
+          <tr> <th> Rang </th> <th> Élève </th> <th> Classe en 2016–2017 </th><th>Rang par classe</th> </tr>
           <tr> <td> 1 </td> <td> Adrien Vannson (nan) </td> <td> 2<sup>de</sup> </td><td>1</td> </tr>
           <tr> <td> 2 </td> <td> Baptiste Tesson (general_fougere) </td> <td> 1<sup>re</sup> </td><td>1</td> </tr>
           <tr> <td> 3 </td> <td> Victor Deng (vdng9338) </td> <td> 1<sup>re</sup> </td><td>2</td> </tr>
