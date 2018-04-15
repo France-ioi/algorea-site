@@ -614,6 +614,9 @@ table .green {
 table .blue {
     background-color: #93beff;
 }
+table .gray {
+    background-color: #c0c0c0;
+}
 table.ranking {
     margin: auto;
     border-collapse: collapse;
