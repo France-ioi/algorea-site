@@ -50,19 +50,18 @@ table {
     border-spacing: 0;
 }
 
-.clear {
-    clear: both
+html {
+    overflow-y: scroll;
 }
-
-
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    hyphens: auto;
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-body {
-   font-family: "Open Sans", sans-serif;
-   line-height: 1.5;
 }
 a {
     color: #448b2b;
@@ -71,6 +70,17 @@ a {
 }
 strong {
     font-weight: bold;
+}
+sup,
+sub {
+    font-size: .7em;
+    line-height: 0;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
 }
 .txtcenter {
     text-align: center;
@@ -91,6 +101,9 @@ strong {
 }
 .fr img {
     vertical-align: middle;
+}
+.clear {
+    clear: both;
 }
 .mtm {
     margin-top: 10px;
@@ -136,19 +149,6 @@ img {
 .alert {
     color: red;
 }
-@media (min-width: 640px) and (max-width: 799px) {
-    .one-third {
-        flex: 0 1 50%;
-    }
-}
-@media (min-width: 800px) {
-    .one-half {
-        width: 50%;
-    }
-    .one-third {
-        flex: 0 1 33.33%;
-    }
-}
 .section {
     clear: both;
     overflow: hidden;
@@ -178,12 +178,16 @@ p, ul {
 .btn:focus, .btn:active {
     box-shadow: 5px 5px 8px #eee, 2px 2px 6px #2a501d inset;
 }
+.mainContainer {
+    padding: 0 8px;
+}
 .pageContent {
     text-align: justify;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /*
 *
 * Branding
@@ -213,20 +217,10 @@ p, ul {
     font-size: 48px;
     text-align: center;
     width: 100%;
-    word-spacing: 20px;
+    word-spacing: .4em;
 }
 .siteTitle img {
     vertical-align: middle;
-}
-@media (max-width: 800px) {
-   .siteTitle {
-        font-size: 20px;
-        word-spacing: 10px;
-    }
-    .siteTitle img {
-        width: 70px;
-        height: 70px;
-    }
 }
 
 /*
@@ -234,7 +228,6 @@ p, ul {
 * Navigation
 *
 */
-
 #menu {
     text-align: center;
 }
@@ -242,12 +235,12 @@ p, ul {
     display: inline-block;
 }
 #menu a {
-    padding: 5px 20px 3px;
+    padding: 5px 1.25rem 3px;
     display: inline-block;
     color: #000;
     text-decoration: none;
     font-family: "Fira Sans", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 #menu a:hover {
     background-color: #ccc;
@@ -257,9 +250,11 @@ p, ul {
     color: #fff;
 }
 
-/* Titles */
-h1, h2, h3 {
-}
+/*
+*
+* Titles
+*
+*/
 h1 {
     margin-top: 1em;
     margin-right: 20px;
@@ -278,11 +273,6 @@ h2 {
 h3 {
     font-size: 1.5em;
     margin-top: 1em;
-}
-@media (max-width: 640px) {
-   h1 {
-      font-size: 20px;
-   }
 }
 .subtitle {
     font-size: 1.3em;
@@ -327,14 +317,8 @@ h3 {
 }
 #actus img {
 }
-@media (min-width: 1024px) {
-    #actusContent {
-        width: 1024px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
 #actusContent {
+    max-width: 1024px;
     margin: 0 auto;
     padding: 10px;
     background-color: #ececec;
@@ -345,6 +329,9 @@ h3 {
 }
 #actus a {
     color: #448b2b;
+}
+#actusContent > p:first-child {
+    margin-top: 0;
 }
 
 .table {
@@ -473,15 +460,12 @@ table td ul:first-child{
     box-shadow: 3px 3px 3px #9c9696, -1px -1px 3px #333 inset;
 }
 
-
 /*
 *
 * TABS
 *
 */
 .tabSelectors {
-    /*background-color: #c7e0bf;*/
-    box-shadow: 5px 5px 8px #eee;
     border-bottom: 3px solid #448b2b;
 }
 .tabSelectors ul {
@@ -583,6 +567,7 @@ table.awards {
     text-align: center;
     vertical-align: middle;
 }
+
 /*
 *
 * RESULTS
@@ -591,12 +576,18 @@ table.awards {
 table.borders {
     border-collapse: collapse;
     width: 100%;
+    margin-top: 10px;
+    display: block;
+    overflow-x: auto;
 }
 .borders tr td {
     border: solid black 1px;
     padding-left: 5px;
     padding-right: 5px;
     text-align: right;
+}
+.borders tr td:not(:first-child):not(:last-child) {
+    width: 6.5%;
 }
 .borders tr:first-child,
 .borders tr td:first-child {
@@ -621,18 +612,15 @@ table.ranking {
     margin: auto;
     border-collapse: collapse;
 }
-.ranking tr:nth-child(2n + 1),
-.contestRanking tbody tr:nth-child(2n),
-.classement_row_data:nth-child(2n + 1) {
+.ranking tr:nth-child(2n + 1) {
     background: #F2F6FF;
 }
-.ranking th, .ranking td {
+.ranking th,
+.ranking td {
     padding: 3px;
     border: 1px solid black;
 }
-.ranking th,
-.contestRanking thead,
-.classement_row_first {
+.ranking th {
     background: #C0D0F8;
     font-weight: bold;
 }
@@ -642,10 +630,19 @@ table.ranking {
 * Footer
 *
 */
+body {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
 #footer {
-    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
     background-color: #448b2b;
-    margin-top: 40px;
+    padding-bottom: 10px;
 }
 #copyright {
     text-align: center;
@@ -657,3 +654,48 @@ table.ranking {
     text-decoration: underline;
 }
 
+/*
+*
+* Media queries
+*
+*/
+@media (max-width: 639px) {
+    html {
+        font-size: 14px;
+    }
+
+   .siteTitle {
+        font-size: 32px;
+    }
+    .siteTitle img {
+        width: 40px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+
+    .tabSelectors ul {
+        margin-left: 1em;
+    }
+}
+
+@media (min-width: 640px) {
+    .one-third {
+        flex: 0 1 50%;
+    }
+}
+@media (min-width: 800px) {
+    .one-half {
+        width: 50%;
+    }
+    .one-third {
+        flex: 0 1 33.33%;
+    }
+}
