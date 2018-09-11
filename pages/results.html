@@ -16,6 +16,12 @@
         <li ng-class="{ active: isTabSet(3) }">
             <a href ng-click="setTab(3)">Troisième tour 2018</a>
         </li>
+        <li ng-class="{ active: isTabSet(4) }">
+            <a href ng-click="setTab(4)">Demi-finale 2018</a>
+        </li>
+        <li ng-class="{ active: isTabSet(4) }">
+            <a href ng-click="setTab(5)">Finale 2018</a>
+        </li>
       </ul>
     </div>
     <div class="tabs">
@@ -368,7 +374,7 @@ La catégorie verte n'a été ouverte qu'après les dates officielles du 1er tou
         </p>
         <p>
            Pour accéder à la demi-finale (du 3 au 16 juin), ou aux sujets d'entraînements, allez sur <a href="http://concours.algorea.org" target='_blank'>concours.algorea.org</a> munis de votre code de participant. Si vous n'en avez pas, demandez-le à votre enseignant, qui peut le
-           trouver dans son interface coordinateur (dans la synthèse des résultats).
+           trouver dans son interface coordinateur (dans la synthèse des résultats). Vous aurez aussi besoin de fournir une adresse email, pour que nous puissions vous contacter directement à propos de la finale.
         </p>
         <!--
         <p>
@@ -516,5 +522,78 @@ La catégorie verte n'a été ouverte qu'après les dates officielles du 1er tou
 <tr class="gray"><td>Total</td><td>0</td><td>8</td><td>26</td><td>58</td><td>108</td><td>187</td><td>112</td><td>73</td><td>58</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>632</td><td></td></tr>
 </tbody></table>      </div>
     </div>
+    <div class="tab" ng-show="isTabSet(4)">
+     <h2>Demi-finale 2018</h2>
+     <p>1060 élèves ont participé à la demi-finale Algoréa, répartis comme suit :</p>
+     <style>
+     </style>
+     <table class="borders" cellspacing="0">
+     <tr><td>Classe</td><td>CM1</td><td>CM2</td><td>6e</td><td>5e</td><td>4e</td><td>3e</td><td>2de</td><td>1ère</td><td>Tale</td></tr>
+     <tr><td>Score minumum pour la finale à Paris</td><td>600</td><td>600</td><td>650</td><td>700</td><td>740</td><td>760</td><td>812</td><td>821</td><td>-</td></tr>
+     <tr><td>Score minimum pour la finale en ligne</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td><td>600</td></tr>
+     <tr><td>Nombre total de participants</td><td>4</td><td>17</td><td>64</td><td>166</td><td>205</td><td>281</td><td>128</td><td>119</td><td>76</td></tr>
+     </table>
+     
+     <p>Chaque participant peut consulter son classement en se reconnectant sur <a href="http://concours.algorea.org" target='_blank'>concours.algorea.org</a>. Les coordinateurs peuvent également consulter les classements sur la page de synthèse de leur interface coordinateur.</p>
+     
+    </div>
+    <div class="tab" ng-show="isTabSet(5)">
+        <h2>Finale 2018</h2>
+        <p>La finale du concours Algoréa 2018 s'est déroulée du 5 au 10 juillet. 27 élèves ont participé officiellement, dont 13 lycéen(ne)s et 14 collégien(ne)s.</p>
+        <p>
+        <center><img src="images/finale_algorea_2018.jpg" style="width:700px"/></center>
+        </p>
+        <p> Voici les résultats : </p>
+
+        <table class="ranking">
+          <tr> <th> Rang </th> <th> Élève </th> <th> Classe en 2016-2017 </th><th>Rang par classe</th> </tr>
+          <tr> <td> 1 </td> <td> Adrien Vannson (nan) </td> <td> 1<sup>re</sup> </td><td>1</td> </tr>
+          <tr> <td> 2 </td> <td> Erwin Deng (eternel) </td> <td> 2<sup>de</sup> </td><td>1</td> </tr>
+          <tr> <td> 3 </td> <td> Hugo Peyraud-Magnin (hugopm) </td> <td> 1<sup>re</sup> </td><td>2</td> </tr>
+          <tr> <td> 4 </td> <td> Grégoire Lecorre (lecorre) </td> <td> 2<sup>de</sup> </td><td>2</td> </tr>
+          <tr> <td> 5 </td> <td> Vincent Jules (vjules) </td> <td> 3<sup>e</sup> </td><td>1</td> </tr>
+          <tr> <td> 6 </td> <td> Jean Zablocki (smeagol) </td> <td> 1<sup>re</sup> </td><td>3</td> </tr>
+          <tr> <td> 7 </td> <td> Remy Kimbrough (faremy) </td> <td> 2<sup>de</sup> </td><td>3</td> </tr>
+          <tr> <td> 8 </td> <td> Justin Cahuzac (cajust) </td> <td> 2<sup>de</sup> </td><td>4</td> </tr>
+          <tr> <td> 9 </td> <td> Esteban Christiann (echristiann) </td> <td> 1<sup>re</sup> </td><td>4</td> </tr>
+          <tr> <td> 10 </td> <td> Sven Meyer (sven) </td> <td> 2<sup>de</sup> </td><td>5</td> </tr>
+          <tr> <td> 11 </td> <td> Brice Gay (gbrice) </td> <td> 2<sup>de</sup> </td><td>6</td> </tr>
+          <tr> <td> 12 </td> <td> Yann Boucher (yboucher490) </td> <td> 1<sup>re</sup> </td><td>5</td> </tr>
+          <tr> <td> 13 </td> <td> Sebastian Filip (sebifilip) </td> <td> 2<sup>de</sup> </td><td>7</td> </tr>
+          <tr> <td> 14 </td> <td> Noémie Jacquemot (elana) </td> <td> 1<sup>re</sup> </td><td>6</td> </tr>
+          <tr> <td> 15 </td> <td> Charles Dai (someone) </td> <td> 5<sup>e</sup> </td><td>1</td> </tr>
+          <tr> <td> 16 </td> <td> Alice Tosel (guchi) </td> <td> 4<sup>e</sup> </td><td>1</td> </tr>
+          <tr> <td> 17 </td> <td> Théo Atakpama (zcodemaster) </td> <td> 3<sup>e</sup> </td><td>2</td> </tr>
+          <tr> <td> 18 </td> <td> Riley Denoyer (badge_rileydenoyer883) </td> <td> 5<sup>e</sup> </td><td>2</td> </tr>
+          <tr> <td> 19 </td> <td> Nathan Duboisset (pandourson) </td> <td> 3<sup>e</sup> </td><td>3</td> </tr>
+          <tr> <td> 20 </td> <td> Ana Bakic (ancipanci) </td> <td> 4<sup>e</sup> </td><td>2</td> </tr>
+          <tr> <td> 21 </td> <td> Noévan Grosset-Ast (dyslight) </td> <td> 4<sup>e</sup> </td><td>3</td> </tr>
+          <tr> <td> 22 </td> <td> Oscar Fischler (badge_oscarfischler863) </td> <td> 6<sup>e</sup> </td><td>1</td> </tr>
+          <tr> <td> 23 </td> <td> Ali-Rayan Boudjema (richem) </td> <td> 5<sup>e</sup> </td><td>3</td> </tr>
+          <tr> <td> 24 </td> <td> Matthieu Jacquiau-Garcera (matt2017) </td> <td> 4<sup>e</sup> </td><td>4</td> </tr>
+          <tr> <td> 25 </td> <td> Corentin Paraire (badge_corentinparaire953) </td> <td> 4<sup>e</sup> </td><td>5</td> </tr>
+          <tr> <td> 26 </td> <td> Tianrui Jiang (tomsyd) </td> <td> 6<sup>e</sup> </td><td>2</td> </tr>
+          <tr> <td> 27 </td> <td> Victor Zablocki (sennesiel2) </td> <td> 4<sup>e</sup> </td><td>6</td> </tr>
+
+
+          </table>
+
+        <p>Félicitations à tou(te)s ! Les épreuves de finale étaient d'un haut niveau, pour pouvoir départager les 27 meilleur(e)s parmi les plus de 600&nbsp;000 participants qui avaient participé à la toute première étape, le concours Castor.</p>
+
+        <p>Une version en ligne des sujets de la finale était également disponible. Les logins des meilleur(e)s classé(e)s de cette finale en ligne dans chaque niveau scolaire étaient :
+        
+        <table  class="ranking"><tr><th>Classe</th><th>Logins, en partant du mieux classé de la finale en ligne</th></tr>
+        <tr><td>Terminale</td><td>thomasghobril, molpio, au2001, thibaudlabat, _pascal_</td></tr>
+        <tr><td>Première</td><td>bidiroc, armanddidierjean, vgiudicelli272, maveric</td></tr>
+        <tr><td>Seconde</td><td>cpicard443, noam, amethyste, badge_ulyssevilledey036</td></tr>
+        <tr><td>Troisième</td><td>badge_louismaxharter984, alpha_lin, gkarnbach515</td></tr>
+        <tr><td>Quatrième</td><td>badge_mathisdentraygues746, badge_thomaslucas595</td></tr>
+        <tr><td>Cinquième</td><td>dsantini392,fvogel499</td></tr>
+        <tr><td>Sixième</td><td>badge_nocartier960</td></tr>
+        </table>
+        
+        Félicitations à tou(te)s !
+        
+        </div>
   </div>
 </div>
