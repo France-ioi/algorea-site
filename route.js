@@ -1,7 +1,7 @@
 var myApp = angular.module('algorea', ['ngRoute']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-   var v = "?v=24";
+   var v = "?v=29";
    $routeProvider
 
    // route for the main page
@@ -43,6 +43,12 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
   // route for the results 2017 page
    .when('/resultats2017', {
       templateUrl : 'pages/results_2017.html' + v,
+      controller  : 'PageCtrl'
+   })   
+
+   // route for the results 2018 page
+   .when('/resultats2018', {
+      templateUrl : 'pages/results_2018.html' + v,
       controller  : 'PageCtrl'
    })   
    
