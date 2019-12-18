@@ -10,7 +10,21 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-  <script type="text/javascript" src="route.js?v=42"></script>
+  <script type="text/javascript" src="route.js?v=43"></script>
+   <script>
+   if(window.location.protocol != 'https:') {
+     try {
+       var xhr = new XMLHttpRequest();
+       xhr.onload = function() {
+         if (window.location.hostname != '127.0.0.1') {
+            window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+         }
+       }
+       xhr.open('GET', 'https://static4.castor-informatique.fr/contestAssets/https_test.txt');
+       xhr.send();
+     } catch(e) {}
+   }
+   </script>
   <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -42,7 +56,7 @@
     </div>
   </header>
 
-  <div ng-if="isActive('/')"><ng-include src="'actus.html?v=28'" id="actus"></ng-include></div>
+  <div ng-if="isActive('/')"><ng-include src="'actus.html?v=43'" id="actus"></ng-include></div>
 
   <div class="mainContainer" id="content" role="main">
     <div ng-view autoscroll="true"><!-- the div that displays the page content --></div>
