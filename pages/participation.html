@@ -22,7 +22,7 @@
         </p>
         <h2>Se qualifier dans une catégorie</h2>
         <p>
-          Le concours Algoréa est ouvert aux élèves du CM1 à la terminale. Chacun peut obtenir l'accès à une <a href="#/#categoriesPresentation">catégorie</a> du concours de quatre manières :
+          Le concours Algoréa est ouvert aux élèves du CM1 à la terminale. Chacun peut obtenir l'accès à une <a href="#/#categoriesPresentation">catégorie</a> du concours de trois manières :
         </p>
         <div class="vignettes">
           <div class="vignette">
@@ -33,19 +33,18 @@
             </p>
           </div>
           <div class="vignette">
-            <h3>La préparation</h3>
-            <p>
-              Si vous avez déjà un code de participant, obtenir 100 points ou plus lors d'une préparation dans une catégorie jaune ou orange, vous ouvre l'accès au concours dans cette même catégorie.
-            </p>
-            <p>
-              Pour cela, faites une épreuve de préparation en entrant votre code de participant sur<br/><a href="https://castor-informatique.fr" target="_blank">concours.castor-informatique.fr</a>.
-            </p>
-          </div>
-          <div class="vignette">
             <h3>Le concours Algoréa</h3>
             <img src="images/logo.png" alt="logo concours Algoréa" class="fl" />
             <p>
-              Atteindre 100 points ou plus lors du concours Algoréa dans une catégorie, donne immédiatement l'accès au concours de la catégorie suivante. Un seuil inférieur à 100 peut être annoncé lors de la publication des résultats.
+              Obtenir un bon score en concours dans une catégorie donne accès à la catégorie suivante. Les scores à atteindre sont :
+              <ul>
+               <li>180 en catégorie blanche.
+               <li>180 en catégorie jaune.
+               <li>100 en catégorie orange.
+              </ul>
+            </p>
+            <p>
+              On peut participer dans une autre catégorie dès l'heure qui suit l'obtention de ce score.
             </p>
           </div>
           <div class="vignette">
@@ -57,6 +56,8 @@
             <p>
                Allez ensuite sur <a href="http://www.france-ioi.org/algorea/algoreaLink.php" target="_blank">cette page</a> pour obtenir votre code de participant.
             </p>
+          </div>
+          <div class="vignette">
           </div>
         </div>
         <div ng-show="custom" class="txtcenter">
@@ -84,16 +85,9 @@
                 <td class="colorCategoryTitle" style="font-size:14px">Verte</td>
                 <td>Avoir validé le niveau 2 du parcours général</td>
               </tr>
-              <tr class="colorCategory blue">
-                <td class="colorCategoryTitle" style="font-size:14px">Bleue</td>
-                <td>Avoir validé le niveau 3 du parcours général</td>
-              </tr>
             </tbody>
           </table>
         </div>
-        <p>
-          Après avoir obtenu un premier accès à une <a href="#/#categoriesPresentation">catégorie</a>, on peut accéder à la catégorie suivante en validant sa catégorie lors d'un tour du concours. Faire d'autres épreuves de préparation peut donner accès aux catégories jaunes ou orange, tandis que résoudre des exercices sur france-ioi.org peut donner progressivement accès à toutes les catégories.
-        </p>
         <h2>Obtenir un code de participant Algoréa</h2>
         <p>
           Votre accès au concours est donné par un code de participant Algoréa. Ce code d'une douzaine de caractères est à bien conserver et garder secret. Il vous permettra d'accéder au concours dans la bonne catégorie, de débloquer l'accès à une catégorie suite à un entraînement ou au concours, ou de visualiser vos participations et résultats.
@@ -149,7 +143,7 @@
             <tr>
               <td colspan="2">
                 <p>
-                  Pour les catégories verte et bleue, en classe comme à la maison, il faudra nécessairement utiliser votre code de participant Algoréa.<br/>
+                  Pour la catégorie verte, en classe comme à la maison, il faudra nécessairement utiliser votre code de participant Algoréa.<br/>
                   Dans ces catégories, la participation est individuelle uniquement (pas de binômes).
                 </p>
               </td>
@@ -157,7 +151,7 @@
           </tbody>
         </table>
         <p>
-         Vous ne devez bien sûr pas faire la même épreuve du concours deux fois lors du même tour.
+         Vous ne devez bien sûr pas faire la même épreuve du concours (même catégorie) deux fois lors du même tour.
         </p>
       </div>
       <div class="tab" ng-show="isTabSet(2)">
@@ -191,7 +185,7 @@
             </tr>
             <tr>
               <td colspan="2">
-                <p>Les élèves qui ont atteint la <strong>catégorie verte ou bleue</strong> peuvent participer en classe ou à la maison, uniquement en utilisant leur <strong>code de participant Algoréa</strong>. Les binômes ne sont plus autorisés dans ces catégories.</p>
+                <p>Les élèves qui ont atteint la <strong>catégorie verte</strong> peuvent participer en classe ou à la maison, uniquement en utilisant leur <strong>code de participant Algoréa</strong>. Les binômes ne sont plus autorisés dans cette catégorie.</p>
               </td>
             </tr>
           </tbody>
@@ -243,7 +237,7 @@
         </table>
         <h2>Catégories de participation</h2>
           <p>
-            Chaque tour du concours et module de préparation est disponible dans plusieurs catégories, représentées par des couleurs : blanc pour les débutants, puis jaune, orange, vert et bleu. Chacune vise des compétences ciblées en programmation.
+            Chaque tour du concours et module de préparation est disponible dans plusieurs catégories, représentées par des couleurs : blanc pour les débutants, puis jaune, orange et vert. Chacune vise des compétences ciblées en programmation.
           </p>
           <p class="txtcenter"><a href="#/#categoriesPresentation">Voir la description des catégories</a></p>
           <p>Chaque élève qui a participé au <a href="http://castor-informatique.fr" target="_blank">concours Castor Informatique</a> démarre dans une catégorie qui dépend de son score.</p>
@@ -261,10 +255,16 @@
         </p>
         <p class="txtcenter"><a href="#/#categoriesPresentation">Voir la description des catégories</a></p>
         <p>
-          Pour cela, il faut atteindre ou dépasser un certain score lors du concours, en général de 100 points. En bonus, selon votre score exact, vous pourrez obtenir de 2 étoiles à 4 étoiles rattachées à votre catégorie.
+          Pour cela, il faut atteindre ou dépasser un certain score lors du concours, qui dépend de la catégorie :
+          <ul>
+            <li>catégorie blanche : 180 points
+            <li>catégorie jaune : 180 points
+            <li>catégorie orange : 100 points
+            <li>catégorie verte : 100 points
+          </ul>
         </p>
         <p>
-          Ainsi si vous avez obtenu 100 points lors d'un tour du concours en catégorie jaune, vous aurez validé : catégorie jaune, 2 étoiles, et pourrez faire le tour suivant en catégorie orange. Le nombre de points requis pour valider 3 ou 4 étoiles sera fixé après chaque concours.
+          Ainsi si vous avez obtenu 180 points lors d'un tour du concours en catégorie jaune, vous aurez validé la catégorie jaune, et pourrez faire l'épreuve en catégorie orange lors du même tour, ou lors du tour suivant.
         </p>
       </div>
     </div>

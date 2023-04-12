@@ -1,7 +1,7 @@
 var myApp = angular.module('algorea', ['ngRoute']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-   var v = "?v=48";
+   var v = "?v=57";
    $routeProvider
 
    // route for the main page
@@ -25,6 +25,12 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
    // route for the preparation page
    .when('/preparation', {
       templateUrl : 'pages/preparation.html' + v,
+      controller  : 'PageCtrl'
+   })
+
+   // route for the organizers page
+   .when('/organizers', {
+      templateUrl : 'pages/organizers.html' + v,
       controller  : 'PageCtrl'
    })
 
@@ -66,7 +72,7 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
 
    // route for the coordinator page
    .when('/coordinateur', {
-      templateUrl : 'http://coordinateur.concours-alkindi.fr',
+      templateUrl : 'http://coordinateur.castor-informatique.fr',
       controller  : 'PageCtrl'
    })
 
