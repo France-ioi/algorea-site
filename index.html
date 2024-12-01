@@ -24,7 +24,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-  <script type="text/javascript" src="route.js?v=57"></script>
+  <script type="text/javascript" src="route.js?v=60"></script>
   <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
@@ -46,9 +46,11 @@
             <a href="#/participation">Participer</a>
           </li><li ng-class="{active: isActive('/preparation')}">
             <a href="#/preparation">Se préparer</a>
-          </li><li ng-class="{active: isActive('/recompenses')}">
+          </li>
+          <!--<li ng-class="{active: isActive('/recompenses')}">
             <a href="#/recompenses">Récompenses</a>
-          </li><li ng-class="{active: isActive('/resultats')}">
+          </li>-->
+          <li ng-class="{active: isActive('/resultats')}">
             <a href="#/resultats">Résultats</a>
           </li>
           </li><li ng-class="{active: isActive('/organizers')}">
