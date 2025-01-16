@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Concours Algoréa</title>
    <script>
-   if(window.location.protocol != 'https:') {
+   /*if(window.location.protocol != 'https:') {
      try {
        var xhr = new XMLHttpRequest();
        xhr.onload = function() {
@@ -17,10 +17,10 @@
        xhr.open('GET', 'https://static4.castor-informatique.fr/contestAssets/https_test.txt');
        xhr.send();
      } catch(e) {}
-   }
+   }*/
    </script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/> <!--probablement à modifier-->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
@@ -36,7 +36,7 @@
       <div class="subHeader">
       </div>
       <div class="siteLogo">
-        <div class="siteTitle">Concours <img src="images/logoAlgorea.png"/><span class="hiddenChar">A</span>lgoréa</div>
+        <div class="siteTitle"><img src="images/logo_fusee.png"/> Concours Algoréa<img src="images/etoiles.png" style="width:80px"/></div>
       </div>
       <nav id="menu" role="navigation">
         <ul>
@@ -61,7 +61,7 @@
     </div>
   </header>
 
-  <div ng-if="isActive('/')"><ng-include src="'actus.html?v=43'" id="actus"></ng-include></div>
+  <div ng-if="isActive('/')"><ng-include src="'actus.html?v=44'" id="actus"></ng-include></div>
 
   <div class="mainContainer" id="content" role="main">
     <div ng-view autoscroll="true"><!-- the div that displays the page content --></div>
