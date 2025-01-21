@@ -64,7 +64,7 @@ body {
     box-sizing: border-box;
 }
 a {
-    color: #448b2b;
+    color: #4e4aa4;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -163,7 +163,7 @@ p, ul {
 }
 .btn {
     text-align: center;
-    background-color: #448b2b;
+    background-color: #4e4aa4;
     border: 2px solid #234a16;
     border-radius: 5px;
     color: #fff;
@@ -194,7 +194,7 @@ p, ul {
 *
 */
 .header {
-    background-color: white;
+    background-color: #2d266d;
     box-shadow: 0px 1px 5px #888888;
 }
 .subHeader {
@@ -203,18 +203,19 @@ p, ul {
     font-size: 16px;
     text-align: left;
     color: white;
-    background-color: #448b2b;
+    background-color: #4e4aa4;
 }
 .siteLogo {
     padding-top: 10px;
 }
 .siteLogo img {
-    width: 60px;
+    width: 120px; /**/
     margin-right: -3px;
 }
 .siteTitle {
     font-family: "Fira Sans", sans-serif;
-    font-size: 48px;
+    font-size: 56px;
+    color: white;
     text-align: center;
     width: 100%;
     word-spacing: .4em;
@@ -237,16 +238,18 @@ p, ul {
 #menu a {
     padding: 5px 1.25rem 3px;
     display: inline-block;
-    color: #000;
+    color: #ccc;
     text-decoration: none;
     font-family: "Fira Sans", sans-serif;
     font-size: 1.125rem;
+    border-top-left-radius : 8px;
+    border-top-right-radius : 8px;
 }
 #menu a:hover {
-    background-color: #ccc;
+    background-color: #4d4872;
 }
 #menu li.active a {
-    background-color: #448b2b;
+    background-color: #4e4aa4; /* 448b2b*/
     color: #fff;
 }
 
@@ -317,18 +320,26 @@ h3 {
 }
 #actus img {
 }
-#actusContent {
+#actusContent {  /* modifié */
     max-width: 1024px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #ececec;
-    background-color: rgba(236,236,236,0.85);
+    background-color: #faa819;
+    /*background-color: rgba(236,236,236,0.85);*/
     box-shadow: 5px 5px 8px #eee;
     border: 1px solid #ccc;
     text-align: center;
+    color: #362e87;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
+
+#actusContent a {
+    color: #ff4d67;
+}
+
 #actus a {
-    color: #448b2b;
+    color: #4e4aa4;
 }
 #actusContent > p:first-child {
     margin-top: 0;
@@ -455,7 +466,7 @@ table td ul:first-child{
     box-shadow: 3px 3px 3px #9c9696, -1px -1px 3px #ccc inset;
 }
 .languageSelector a:hover {
-    background-color: #448b2b;
+    background-color: #4e4aa4; /* 448b2b*/
     color: #fff;
     box-shadow: 3px 3px 3px #9c9696, -1px -1px 3px #333 inset;
 }
@@ -466,7 +477,7 @@ table td ul:first-child{
 *
 */
 .tabSelectors {
-    border-bottom: 3px solid #448b2b;
+    border-bottom: 3px solid #4e4aa4; /* 448b2b*/
 }
 .tabSelectors ul {
     margin: 0 0 0 2em;
@@ -482,14 +493,14 @@ table td ul:first-child{
     text-decoration: none;
     color: #000;
     display: block;
-    border: 1px solid #448b2b;
+    border: 1px solid #4e4aa4; /* 448b2b*/
     margin-bottom: -1px;
     margin-right: 2px;
     border-radius: 8px 0px 0 0;
     background-color: #c7e0bf;
 }
 .tabSelectors li.active a {
-    background-color: #448b2b;
+    background-color: #4e4aa4; /* 448b2b*/
     color: #fff;
 }
 
@@ -642,7 +653,7 @@ body {
     bottom: 0;
     width: 100%;
     min-height: 60px;
-    background-color: #448b2b;
+    background-color: #4e4aa4; /* #448b2b; */
     padding-bottom: 10px;
 }
 #copyright {
@@ -700,3 +711,182 @@ body {
         flex: 0 1 33.33%;
     }
 }
+
+/* Ajout css Marielle */
+
+/* Page de présentation */
+
+.image_contenu {
+    margin: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
+
+.bouton_acces { 
+    height: 50px;
+    background-color: #4e4aa4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#acces_exemple {
+    width: 250px;
+}
+
+.bouton_acces:hover {
+    background-color: #4d4872;
+}
+
+.bouton_acces p {
+    margin: 0;
+    color: white;
+    text-align : center;
+    font-size: 1.2em;
+}
+
+#chronologie {
+    margin: 20px;
+    width: 100%;
+    max-width : 800px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titre_tour {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mois_fin {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.mois_debut {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.mois_seul {
+    text-align: center;
+}
+
+.mois_tour {
+    width: 20%;
+    font-size: 1.2em;
+}
+
+.tour1 {
+    background-color: #8ac6ff;
+}
+.tour2 {
+    background-color: #bc99f0;
+}
+.tour3 {
+    background-color: lightcyan;
+}
+
+/* Page participer */
+
+#modes_inscription {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modalite_inscription {
+    font-weight: 600;
+}
+
+.col_image {
+    background-color: #2b2467;
+    width: 120px;
+}
+
+.inscription_castor, .inscription_algorea {
+    height: 150px; 
+}
+
+#modes_inscription td {
+    vertical-align: middle;
+    padding : 10px;
+    border: 1px solid #ccc;
+}
+
+#acces_coordinateur {
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.temps_classe {
+    text-align: center;
+    vertical-align:middle;
+}
+
+/* Tableau des notions */
+
+.tableau_notions {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 920px;
+  }
+
+  .tableau_notions .container {
+    margin: 20px auto;
+    width: 918px;
+    position: relative;
+  }
+
+  .tableau_notions .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .tableau_notions .buttons {
+    position: absolute;
+    top: 70px;
+    left: 35%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .tableau_notions .buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #5f5666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    z-index: 1;
+  }
+  .tableau_notions .buttons button.active {
+    background-color: #b66fd9;
+    font-weight: bold;
+  }
+
+  .tableau_notions .buttons button:hover {
+    background-color: #8652a0;
+  }
