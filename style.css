@@ -794,6 +794,7 @@ body {
 
 /* Page participer */
 
+
 #modes_inscription {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -802,6 +803,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%
 }
 
 .modalite_inscription {
@@ -810,7 +812,12 @@ body {
 
 .col_image {
     background-color: #2b2467;
-    width: 120px;
+    width: 15%;
+    text-align: center;
+}
+
+.col_image img {
+    margin: 0 auto;
 }
 
 .inscription_castor, .inscription_algorea {
