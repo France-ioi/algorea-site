@@ -840,13 +840,13 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 920px;
   }
 
   .tableau_notions .container {
     margin: 20px auto;
     width: 918px;
     position: relative;
+    max-width: 95vw;
   }
 
   .tableau_notions .image {
@@ -854,9 +854,6 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
     border: 2px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -864,16 +861,16 @@ body {
 
   .tableau_notions .buttons {
     position: absolute;
-    top: 70px;
-    left: 35%;
-    transform: translateX(-50%);
     display: flex;
     gap: 10px;
+    top: 8%;
+    left: 10%;
+    width: 50%;
   }
 
   .tableau_notions .buttons button {
-    padding: 10px 20px;
-    margin: 0 10px;
+    flex: 1 1 33%;
+    padding: 0.3em 0.6em;
     background-color: #5f5666;
     color: white;
     border: none;
@@ -882,6 +879,7 @@ body {
     font-size: 1.2em;
     z-index: 1;
   }
+  
   .tableau_notions .buttons button.active {
     background-color: #b66fd9;
     font-weight: bold;
@@ -889,4 +887,10 @@ body {
 
   .tableau_notions .buttons button:hover {
     background-color: #8652a0;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tableau_notions .buttons {
+      font-size: 0.7em;
+    }
   }
