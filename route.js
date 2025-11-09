@@ -1,7 +1,7 @@
 var myApp = angular.module('algorea', ['ngRoute']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-   var v = "?v=69";
+   var v = "?v=70";
    $routeProvider
 
    // route for the main page
